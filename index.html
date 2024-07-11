@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacje o pogodzie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sprawdź pogodę</h1>
+        <form id="weather-form">
+            <input type="text" id="city" name="city" placeholder="Wpisz nazwę miasta" required>
+            <div class="unit-selector">
+                <label>
+                    <input type="radio" name="unit" value="M" checked> Celsjusz
+                </label>
+                <label>
+                    <input type="radio" name="unit" value="I"> Fahrenheit
+                </label>
+            </div>
+            <button type="submit">Sprawdź pogodę</button>
+        </form>
+        <div id="current-weather" class="weather-result"></div>
+        <div id="forecast-weather" class="weather-result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
